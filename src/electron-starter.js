@@ -1,4 +1,10 @@
 const electron = require('electron');
+// Enable live reload for Electron too
+require('electron-reload')(__dirname, {
+    // Note that the path to electron may vary according to the main file
+    electron: require(`${__dirname}/../node_modules/electron`)
+});
+
 // Module to control application life.
 const app = electron.app;
 // Module to create native browser window.
