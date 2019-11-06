@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Header from './Header';
+import ToolBar from '../components/ToolBar'
 
 const Layout = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
         <main className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto py-4 w-full">
             {children}
         </main>
+        <ToolBar />
     </div>
   );
 };
