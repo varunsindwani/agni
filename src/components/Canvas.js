@@ -1,8 +1,19 @@
 import React from 'react';
+import CellRow from './CellRow';
 
-const Canvas = () => (
-  <>
-  </>
-);
+function Canvas() {
+    return (
+      <div className="mx-auto">
+        <CellRow />
+        <CellRow />
+        <CellRow />
+        <CellRow />
+        <CellRow />
+        <CellRow />
+        <CellRow />
+        <CellRow />
+      </div>
+    )
+}
 
 export default Canvas;
