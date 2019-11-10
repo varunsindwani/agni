@@ -1,16 +1,17 @@
 import React from 'react';
 import Cell from './Cell';
+import {color} from './ToolBar';
 
 const CellRow = () => (
     <div className="flex">
-        <Cell />
-        <Cell />
-        <Cell />
-        <Cell />
-        <Cell />
-        <Cell />
-        <Cell />
-        <Cell />
+        <Cell color={"red"}/>
+        <Cell color={window.color}/>
+        <Cell color={window.color}/>
+        <Cell color={window.color}/>
+        <Cell color={window.color}/>
+        <Cell color={window.color}/>
+        <Cell color={window.color}/>
+        <Cell color={window.color}/>
     </div>
 )
 
