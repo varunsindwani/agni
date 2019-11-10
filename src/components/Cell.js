@@ -1,16 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 var mouse_pressed = false;
-var temp = false;
 
-const Cell = () => {
+const Cell = (props) => {
     function setColor(e)    {
-        // console.log(mouse_pressed)
-        if(mouse_pressed || temp)   {
-            temp = false;
-            // console.log({mouse})
+        if(mouse_pressed)   {
             try{
-                e.target.style.backgroundColor = 'black';
+                e.target.style.backgroundColor = window.color;
             }
             catch(e)   {
                 console.log(e);
@@ -24,7 +21,6 @@ const Cell = () => {
         setColor(e);
         mouse_pressed = false;
     }
-  
 
     return(
         <button
@@ -38,5 +34,12 @@ const Cell = () => {
     )
 }
 
+Cell.propTypes = {
+    color: PropTypes.string,
+};
+
+Cell.defaultProps = {
+    color: 'black',
+};
 
 export default Cell;
