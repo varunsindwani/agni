@@ -14,7 +14,11 @@ A open source pixel art tool.
 
 ## Get started
 
-1. **Start Development Server**
+1. **Get Dependencies**
+```sh
+npm install
+```
+2. **Start Development Server**
 ```sh
 npm run dev
 ```
