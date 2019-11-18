@@ -5,9 +5,9 @@ const { shell } = window.require('electron')
 const Header = () => (
   <header className="bg-red-600 max-w-full p-2 flex">
     <div className="w-8 mx-2">
-      {/* <a href={shell.openExternal('https://github.com/varunsindwani/agni')}>
+      <a href={shell.openExternal('https://github.com/varunsindwani/agni')}>
         <img src={require('../assets/logo/agni.png')} alt="agni" />
-      </a> */}
+      </a>
     </div>
     <nav className="ml-auto flex">
       <button className="w-5 mx-4 ">
